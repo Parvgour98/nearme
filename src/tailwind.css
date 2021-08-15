@@ -1,0 +1,38 @@
+@import "./theme.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply select-none bg-background text-onBackground;
+}
+
+header {
+  @apply fixed top-0 left-0 z-50 w-full h-20 bg-navBar text-onNavBar;
+  box-shadow: 0px 10px 27px 3px rgb(55 55 55 / 30%);
+}
+
+nav {
+  @apply flex justify-center h-full w-full;
+}
+
+nav .container {
+  @apply w-full px-6 lg:p-0 lg:w-11/12 xl:w-10/12 h-full flex justify-between md:justify-around items-center;
+}
+
+nav #menu {
+  @apply absolute top-20 left-0 bg-navBar shadow-md w-screen px-8 md:relative md:top-auto md:left-auto md:shadow-none md:w-auto md:items-center;
+}
+
+nav ul#menu li {
+  @apply p-2 m-2;
+}
+
+.rounded-outline-btn {
+  @apply p-2 px-5 uppercase font-light border border-onNavBar focus:outline-none transition duration-100 hover:border-primary text-sm rounded-full;
+}
+
+main {
+  @apply min-h-screen;
+}

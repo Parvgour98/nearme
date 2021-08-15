@@ -1,0 +1,44 @@
+<a class="skip-link" href="#main">Skip to main</a>
+<header>
+    <nav>
+        <div class="container">
+            <div class="flex items-center">
+                <span class="text-xl sm:text-2xl md:text-3xl font-medium">
+                    Near me services
+                </span>
+            </div>
+            <ul id="menu" class="hidden">
+                <li class="mx-4">
+                    <a href="#">Home</a>
+                </li>
+                <li class="mx-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.dcdevelopers.nearme">Download App</a>
+                </li>
+                <li class="mx-4">
+                    <a href="#">About</a>
+                </li>
+                <li class="mx-4">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="hidden md:flex items-center">
+                <li class="mx-4">
+                    <a href="#">Home</a>
+                </li>
+                <li class="mx-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.dcdevelopers.nearme">Download App</a>
+                </li>
+            </ul>
+            <div onclick="toggleMenu()" class="m-4 md:hidden">
+                <img src="/icons/svgs/menu.svg" class="h-6 w-6" alt="menu">
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="h-20"></div>
+<script defer>
+    const toggleMenu = () => {
+        let menu = document.getElementById('menu');
+        menu.classList.contains('hidden') ? menu.classList.remove('hidden') : menu.classList.add('hidden');
+    };
+</script>

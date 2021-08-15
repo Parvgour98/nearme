@@ -1,0 +1,16 @@
+:root {
+  --nav-bar-color: #fff;
+  --on-nav-bar-color: #222222;
+  --primary-color: #2396f3;
+  --primary-color-variant: #3700b3;
+  --secondary-color: #2d2f33;
+  --secondary-color-variant: #018786;
+  --background-color: #fefefe;
+  --surface-color: #ffffff;
+  --error-color: #b00020;
+  --on-primary-color: #ffffff;
+  --on-secondary-color: #ffffff;
+  --on-background-color: #000000;
+  --on-surface-color: #000000;
+  --on-error-color: #ffffff;
+}

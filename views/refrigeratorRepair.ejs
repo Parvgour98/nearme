@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= desc %>">
+    <meta name="keywords"
+        content="<%= keyword %>, <%= keyword1 %>, <%= keyword2 %>, <%= keyword3 %>, <%= keyword4 %>, <%= keyword5 %>">
+    <meta name="robot" content="index,follow">
+    <title><%= title %></title>
+    <link rel="preload" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="renderBox">
+        <%- include('includes/header.ejs') %>
+        <div id="main" class="min-h-screen lg:mt-36 mt-20">
+            <div class="hero grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Best Electrician Service in <%= location %></h1>
+                    <h2 class="text-2xl mt-3">Let the professionals fix the wires!</h2>
+                    <span class="text-lg mt-2">
+                        When it comes to electricals, it is better not to DIY as it can lead electrical shocks and
+                        sometimes catch
+                        fire too.
+                        Get help from professionals to fix your electrical problems.
+                    </span>
+                    <br>
+                    <button onclick="openApp()"
+                        class="text-lg font-medium uppercase mt-2 bg-primary py-2 px-4 text-white"
+                        style="border-radius: 8px;">
+                        BOOK NOW</button>
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Electrician-1.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>" title="<%= imageTitle %>">
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/howDoWeWork.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <h1 class="text-3xl font-bold">Professional Electrician</h1>
+                    <br>
+                    <p>
+                        Imagine for a second that you come home on a hot summer day and you want to switch on AC but
+                        it's
+                        not
+                        working. You want to Chill on a weekend on Netflix but due to faulty wiring, you won't be able
+                        to
+                        access
+                        the
+                        Wi-Fi. Your friends or family came to your house but the fuse goes off due to an overloaded
+                        circuit.
+                        These
+                        are some of the many disasters that can happen when you ignore problems about home wiring.
+                    </p>
+                    <br>
+                    <p>
+                        People rely on electricity now-a-day more than ever. It keeps us connected to day-to-day life;
+                        the
+                        refrigerator keeps our food fresh. It drives Industries worldwide because we all rest on
+                        electricity
+                        to
+                        get
+                        us throughout the day with ease. You need to make sure that your home or business is wired by a
+                        trained
+                        professional electrician.
+                    </p>
+                    <br>
+                    <p>
+                        Electricity could be dangerous without proper care. It should be taken care of immediately
+                        without
+                        any
+                        further ado. Things like flickering lights, noise from electronics appliances, damaged wiring
+                        can
+                        cause
+                        more
+                        trouble than you can imagine. It must be fixed as soon as possible.
+                    </p>
+                    <br>
+                    <p>
+                        when you realize the problem and you seek to fix it immediately. Your search for the electrician
+                        services
+                        near me. This task also gets hard when you search for the best electrician near me. Still,
+                        you're
+                        not
+                        sure
+                        about their skills. Do you know the easy way to find what you're looking for? Home Axis near me
+                        services
+                        provides you with an All-in-One solution. A well-trained expert electrician can make the
+                        installation
+                        reliable and safe. We provide same-day service. You can search for an Electrician near me to
+                        book an
+                        electrician at the time appropriate for you.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Electrician-2.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>">
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Get the professional help to fix the wires!</h1>
+                    <span class="text-lg mt-3">
+                        Homeaxis Nearme Services can help you with all kind of wiring works, switchboard fixing, etc. We
+                        have a team
+                        of professional electricians who can provide you smart electrical solutions at affordable
+                        prices. Take help
+                        from electrician and make your home a safe and secure place to live
+                        <br>
+                        <br>
+                        Also now you don't need to run to hardware store to buy the tools to solve the electrical
+                        problems. Our
+                        professional electricians will bring required tools and do the job. Give us a call we will take
+                        care of all
+                        the faulty outlets.
+                    </span>
+                    <h2 class="text-2xl mt-2">Give us a call today!</h2>
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/testimonials.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <strong>FAQs </strong>
+                    <br><br>
+                    <div class="tab w-full overflow-hidden rounded-t-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">What is Deep
+                            cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Deep cleaning is a complete process of cleaning. It includes vacuuming of the
+                                entire house, scrubbing of floors by using machinery, dusting and wiping of furniture,
+                                cleaning of fans, lights, windows, extra removing of dust and cobweb from walls,
+                                scrubbing of wall tiles and removal of stains, removal of waste material and garbage
+                                sanitization and disinfection of living area.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-two" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">How much time is
+                            required to complete deep cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">full home deep cleaning requires generally 7 to 8 hours depending upon the
+                                size of the home and furniture content</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">What is the
+                            difference between deep cleaning and a regular cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Deep Cleaning is carried out by professionally trained persons with machinery
+                                and eco-friendly chemicals. Regular cleaning has less depth and thoroughness.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-four" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">How many times deep
+                            cleaning should be done?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We recommend 4 times deep cleaning annually at intervals of four months</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-five" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Which cleaning is
+                            not included in a deep cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Sofa shampooing, mattress shampooing, utensil and cloth cleaning, kitchen
+                                appliance cleaning, personal wardrobes, chandlers, etc not included in deep cleaning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-six" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">What is general or
+                            regular cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Regular cleaning includes manual cleaning of dust, germs, and cobwebs, and
+                                regular cleaning is done within 2 to 3 hours</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-seven" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-seven">How many times
+                            should we take general cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We recommend our general cleaning once a month.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden rounded-b-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-eight" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-eight">What about the
+                            theft of personal belongings? </label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Homeaxis will not be responsible for any type of theft. the customer is
+                                always advised to keep an eye on your belongings. sensitive material should be carefully
+                                moved. please make sure that your personal belongings are in areas such as before your
+                                service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <%- include('includes/vendor.ejs') %>
+            <br>
+            <br>
+            <br>
+        </div>
+        <%- include('includes/footer.ejs') %>
+    </div>
+    <script>
+        const openApp = () => {
+            document.getElementById('renderBox').innerHTML =
+                '<iframe src="<%= appLink %>" style="height: 100vh; width: 100vw;" frameborder="0"></iframe>';
+        }
+    </script>
+    <script defer src="/js/carousel.js"></script>
+</body>
+
+</html>

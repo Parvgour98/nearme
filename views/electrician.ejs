@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= desc %>">
+    <meta name="keywords"
+        content="<%= keyword %>, <%= keyword1 %>, <%= keyword2 %>, <%= keyword3 %>, <%= keyword4 %>, <%= keyword5 %>">
+    <meta name="robot" content="index,follow">
+    <title><%= title %></title>
+    <link rel="preload" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="renderBox">
+        <%- include('includes/header.ejs') %>
+        <div id="main" class="min-h-screen lg:mt-36 mt-20">
+            <div class="hero grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Best Electrician Service in <%= location %></h1>
+                    <h2 class="text-2xl mt-3">Let the professionals fix the wires!</h2>
+                    <span class="text-lg mt-2">
+                        When it comes to electricals, it is better not to DIY as it can lead electrical shocks and
+                        sometimes catch
+                        fire too.
+                        Get help from professionals to fix your electrical problems.
+                    </span>
+                    <br>
+                    <button onclick="openApp()"
+                        class="text-lg font-medium uppercase mt-2 bg-primary py-2 px-4 text-white"
+                        style="border-radius: 8px;">
+                        BOOK NOW</button>
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Electrician-1.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>" title="<%= imageTitle %>">
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/howDoWeWork.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <h1 class="text-3xl font-bold">Professional Electrician</h1>
+                    <br>
+                    <p>
+                        Imagine for a second that you come home on a hot summer day and you want to switch on AC but
+                        it's
+                        not
+                        working. You want to Chill on a weekend on Netflix but due to faulty wiring, you won't be able
+                        to
+                        access
+                        the
+                        Wi-Fi. Your friends or family came to your house but the fuse goes off due to an overloaded
+                        circuit.
+                        These
+                        are some of the many disasters that can happen when you ignore problems about home wiring.
+                    </p>
+                    <br>
+                    <p>
+                        People rely on electricity now-a-day more than ever. It keeps us connected to day-to-day life;
+                        the
+                        refrigerator keeps our food fresh. It drives Industries worldwide because we all rest on
+                        electricity
+                        to
+                        get
+                        us throughout the day with ease. You need to make sure that your home or business is wired by a
+                        trained
+                        professional electrician.
+                    </p>
+                    <br>
+                    <p>
+                        Electricity could be dangerous without proper care. It should be taken care of immediately
+                        without
+                        any
+                        further ado. Things like flickering lights, noise from electronics appliances, damaged wiring
+                        can
+                        cause
+                        more
+                        trouble than you can imagine. It must be fixed as soon as possible.
+                    </p>
+                    <br>
+                    <p>
+                        when you realize the problem and you seek to fix it immediately. Your search for the electrician
+                        services
+                        near me. This task also gets hard when you search for the best electrician near me. Still,
+                        you're
+                        not
+                        sure
+                        about their skills. Do you know the easy way to find what you're looking for? Home Axis near me
+                        services
+                        provides you with an All-in-One solution. A well-trained expert electrician can make the
+                        installation
+                        reliable and safe. We provide same-day service. You can search for an Electrician near me to
+                        book an
+                        electrician at the time appropriate for you.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Electrician-2.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>">
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Get the professional help to fix the wires!</h1>
+                    <span class="text-lg mt-3">
+                        Homeaxis Nearme Services can help you with all kind of wiring works, switchboard fixing, etc. We
+                        have a team
+                        of professional electricians who can provide you smart electrical solutions at affordable
+                        prices. Take help
+                        from electrician and make your home a safe and secure place to live
+                        <br>
+                        <br>
+                        Also now you don't need to run to hardware store to buy the tools to solve the electrical
+                        problems. Our
+                        professional electricians will bring required tools and do the job. Give us a call we will take
+                        care of all
+                        the faulty outlets.
+                    </span>
+                    <h2 class="text-2xl mt-2">Give us a call today!</h2>
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/testimonials.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <strong>FAQs </strong>
+                    <br><br>
+                    <div class="tab w-full overflow-hidden rounded-t-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Is your Electrician
+                            safe to have service in my home?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Our electricians are background verified before being hired. It is absolutely
+                                safe for you to trust them.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-two" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Do you have a
+                            warranty on your service?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We offer a 7 days warranty on service work. We offer to rework free of cost
+                                if a problem arises within 7 days.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Do your rates
+                            include the cost of materials also?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Our rates are only for labor charges. They do not include the cost of any
+                                spare parts required for job work. You can choose to buy it yourself or at the hands of
+                                an electrician.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-four" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">What are your work
+                            timings?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Our working time is 9 am to 7 pm every day in a week.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-five" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Do you offer before
+                            9 am and post 7 pm services?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We maintain the above time to our service work, please follow as possible as
+                                you.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-six" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">What are your
+                            rates?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We provide rate cards for various services. Our electrician inspected the
+                                work and gave an estimate for spare parts.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-seven" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-seven">Do you provide a
+                            warranty for the spare parts?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We are not providing any warranty for the material purchased by the
+                                electrician or by you. It totally depends on the manufacturer or seller.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden rounded-b-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-eight" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-eight">What if we are not
+                            happy with the service?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">If you are not happy with our service you can give such feedback to our
+                                support team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <%- include('includes/vendor.ejs') %>
+            <br>
+            <br>
+            <br>
+        </div>
+        <%- include('includes/footer.ejs') %>
+    </div>
+    <script>
+        const openApp = () => {
+            document.getElementById('renderBox').innerHTML =
+                '<iframe src="<%= appLink %>" style="height: 100vh; width: 100vw;" frameborder="0"></iframe>';
+        }
+    </script>
+    <script defer src="/js/carousel.js"></script>
+</body>
+
+</html>

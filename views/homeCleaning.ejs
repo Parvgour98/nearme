@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= desc %>">
+    <meta name="keywords"
+        content="<%= keyword %>, <%= keyword1 %>, <%= keyword2 %>, <%= keyword3 %>, <%= keyword4 %>, <%= keyword5 %>">
+    <meta name="robot" content="index,follow">
+    <title><%= title %></title>
+    <link rel="preload" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="renderBox">
+        <%- include('includes/header.ejs') %>
+        <div id="main" class="min-h-screen lg:mt-36 mt-20">
+            <div class="hero grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Best Home Cleaning Service in <%= location %></h1>
+                    <h2 class="text-2xl mt-3">Say goodbye to all home cleaning stress!</h2>
+                    <span class="text-lg mt-2">
+                        Who doesn't like clutter-free, sparkling, and spotless home? Now you can get a clean home, with
+                        just a click. With Homeaxis Nearme Services, you can book all kind of cleaning services in your
+                        location online. It will now only save your day but also make sure you and your family are
+                        living in a healthy and safe environment.
+                    </span>
+                    <br>
+                    <button onclick="openApp()"
+                        class="text-lg font-medium uppercase mt-2 bg-primary py-2 px-4 text-white"
+                        style="border-radius: 8px;">
+                        BOOK NOW</button>
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Home%2520Cleaning.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>" title="<%= imageTitle %>">
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/howDoWeWork.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <h1 class="text-3xl font-bold">Professional Home Cleaning</h1>
+                    <br>
+                    <p>
+                        Professional Home Cleaning Services from stressful day-to-day work life, you get some comfort
+                        when you come home and have a rest. All your stress goes away for a bit while resting in your
+                        house. But have you wondered that the home you feel comforting could be dirty? Yes, it might
+                        look clean but there. could be fungus at some places which you don't think exist. It is
+                        certainly harmful.
+                    </p>
+                    <br>
+                    <p>
+                        To clean your house thoroughly. You will spend one free day cleaning it even though you clean it
+                        you might not be able to clean it deeply. Especially when it comes to the bathroom, toilets, and
+                        the kitchen. The greases from kitchen tiles and oil stains from the countertop are very hard to
+                        get rid of. That's not it when it comes to deep cleaning your home. Scrubbing toilets, cleaning
+                        Kitchen Chimney, dusting & cleaning cobwebs from the wall, wiping grills of the balcony to
+                        cleaning the sofa is a never-ending list.
+                    </p>
+                    <br>
+                    <p>
+                        Home cleaning is a task which gives you Headache when nowadays people are very busy in
+                        day-to-day life. You should not be spending your holiday cleaning your home instead of enjoying
+                        A free day. You should clean your mind from work stress. A better solution is to hire a team of
+                        professionals. For home cleaning services, you can search home cleaning services near me. You
+                        can hire the best personnel to Deep clean your home. It will give you a completely hygienic
+                        environment
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Home%2520cleaning-2.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>">
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Want to pamper your home? Avail our home cleaning service today!</h1>
+                    <span class="text-lg mt-3">
+                        We provide deep home cleaning services as per your needs and convenience. You can avail
+                        professional help to clean bedroom, bathroom, kitchen, furniture, and many more things at home.
+                        <br>
+                        <br>
+                        Get home cleaning service in your location at affordable prices. We have a team of well-trained
+                        home cleaners who are well-equipped and carry out proper and deep cleaning, with no harmful
+                        chemicals. Book our home cleaning service today to get sparkling home and save your valuable
+                        time.
+                    </span>
+                    <h2 class="text-2xl mt-2">Book your Service Now!</h2>
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/testimonials.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <strong>FAQs </strong>
+                    <br><br>
+                    <div class="tab w-full overflow-hidden rounded-t-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">What is Deep
+                            cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Deep cleaning is a complete process of cleaning. It includes vacuuming of the
+                                entire house, scrubbing of floors by using machinery, dusting and wiping of furniture,
+                                cleaning of fans, lights, windows, extra removing of dust and cobweb from walls,
+                                scrubbing of wall tiles and removal of stains, removal of waste material and garbage
+                                sanitization and disinfection of living area.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-two" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">How much time is
+                            required to complete deep cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">full home deep cleaning requires generally 7 to 8 hours depending upon the
+                                size of the home and furniture content</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">What is the
+                            difference between deep cleaning and a regular cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Deep Cleaning is carried out by professionally trained persons with machinery
+                                and eco-friendly chemicals. Regular cleaning has less depth and thoroughness.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-four" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">How many times deep
+                            cleaning should be done?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We recommend 4 times deep cleaning annually at intervals of four months</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-five" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Which cleaning is
+                            not included in a deep cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Sofa shampooing, mattress shampooing, utensil and cloth cleaning, kitchen
+                                appliance cleaning, personal wardrobes, chandlers, etc not included in deep cleaning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-six" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">What is general or
+                            regular cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Regular cleaning includes manual cleaning of dust, germs, and cobwebs, and
+                                regular cleaning is done within 2 to 3 hours</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-seven" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-seven">How many times
+                            should we take general cleaning?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We recommend our general cleaning once a month.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden rounded-b-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-eight" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-eight">What about the
+                            theft of personal belongings? </label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Homeaxis will not be responsible for any type of theft. the customer is
+                                always advised to keep an eye on your belongings. sensitive material should be carefully
+                                moved. please make sure that your personal belongings are in areas such as before your
+                                service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <%- include('includes/vendor.ejs') %>
+            <br>
+            <br>
+            <br>
+        </div>
+        <%- include('includes/footer.ejs') %>
+    </div>
+    <script>
+        const openApp = () => {
+            document.getElementById('renderBox').innerHTML =
+                '<iframe src="<%= appLink %>" style="height: 100vh; width: 100vw;" frameborder="0"></iframe>';
+        }
+    </script>
+    <script defer src="/js/carousel.js"></script>
+</body>
+
+</html>

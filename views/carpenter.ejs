@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= desc %>">
+    <meta name="keywords"
+        content="<%= keyword %>, <%= keyword1 %>, <%= keyword2 %>, <%= keyword3 %>, <%= keyword4 %>, <%= keyword5 %>">
+    <meta name="robot" content="index,follow">
+    <title><%= title %></title>
+    <link rel="preload" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="renderBox">
+        <%- include('includes/header.ejs') %>
+        <div id="main" class="min-h-screen lg:mt-36 mt-20">
+            <div class="hero grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Best Carpenter Service in <%= location %></h1>
+                    <h2 class="text-2xl mt-3">Your search for the best carpentry services in your location ends here!
+                    </h2>
+                    <span class="text-lg mt-2">
+                        Your home is your biggest investment and you cannot afford to have even a minor breakdown. Even
+                        a broken window frame or squeaky doors should not be ignored, as it may take all attention of
+                        whosoever visits your house. It is something that needs immediate attention.
+                    </span>
+                    <br>
+                    <button onclick="openApp()"
+                        class="text-lg font-medium uppercase mt-2 bg-primary py-2 px-4 text-white"
+                        style="border-radius: 8px;">
+                        BOOK NOW</button>
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Carpenter-1.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>" title="<%= imageTitle %>">
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/howDoWeWork.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <h1 class="text-3xl font-bold">Carpenters</h1>
+                    <br>
+                    <p>
+                        Your furniture is the most appealing part of your home. Furniture enhances the beauty of your
+                        home. But when you have wear and tear in furniture it doesn't look very good. You might need to
+                        repair or fix that in time. 
+                    </p>
+                    <br>
+                    <p>
+                        Our associated carpenters help you in that matter. Hiring a professional carpenter saves your
+                        time. Our carpenter carries professional tools and equipment. They are professionals and experts
+                        in carpentry. Doing it yourself will consume your time and would not be as perfect as an
+                        experienced carpenter.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="grid grid-cols-10">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="lg:col-span-3 sm:col-span-8 col-span-10 lg:p-4 p-2 flex justify-center">
+                    <img src="https://nearmeservices.com/assets/assets/service_illu/Carpenter-2.png"
+                        class="h-96 w-96 lg:h-full lg:w-full" alt="<%= imageAltTag %>">
+                </div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="col-span-1 lg:hidden hidden sm:block"></div>
+                <div class="lg:col-span-5 sm:col-span-8 col-span-10 p-8 self-center">
+                    <h1 class="text-3xl font-bold">Book our affordable carpentry services today!</h1>
+                    <span class="text-lg mt-3">
+                        From the construction of doors and windows to assembling furniture and installing it, Homeaxis
+                        Nearme Services can help you with all kind of carpentry work. We understand the time constraints
+                        and provide the services at your convenience.
+                        <br>
+                        <br>
+                        We have a team of highly-trained carpenters who have years of experience. You can avail our
+                        high-quality services without burning a hole in your pocket.
+                    </span>
+                    <h2 class="text-2xl mt-2">Call us today!</h2>
+                </div>
+                <div class="col-span-1 hidden sm:block"></div>
+            </div>
+            <br>
+            <br>
+            <%- include('includes/testimonials.ejs') %>
+            <br>
+            <br>
+            <div class="flex justify-center">
+                <div class="sm:w-10/12 md:w-4/5 w-11/12 lg:w-3/4">
+                    <strong>FAQs </strong>
+                    <br><br>
+                    <div class="tab w-full overflow-hidden rounded-t-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one"> Is it safe for us to
+                            allow your Carpenter in my home?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Yes absolutely safe because our carpenters are police verified. Also, our
+                                team is always in touch with the carpenters while working.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-two" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">What are your work
+                            timings?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Our working time is 9 a.m. to 7 p.m.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">What are your
+                            rates?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We have our rate card visible on our app and web.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-four" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">Is there a warranty
+                            on your work?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Yes, we provide a 7 days warranty on our work.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-five" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Do your rates
+                            include the cost of materials also?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Our rates include labor charges only. Required material for your job work
+                                should be purchased by yourself or through our vendor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-six" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">Do you provide a
+                            warranty or guarantee for the materials or spare parts?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">We do not provide guarantees on spare parts and material, because it totally
+                                depends on the manufacturer for the seller.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden  bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-seven" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-seven">What is the
+                            validity of the quotation provided by the vendor?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">Quotations provided by our vendors are fully trusted and regularly verified
+                                by our team.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden rounded-b-lg bg-surface shadow-md">
+                        <input class="absolute opacity-0 " id="tab-multi-eight" type="checkbox" name="tabs">
+                        <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-eight">What if I am not
+                            happy with the service or the service provider?</label>
+                        <div
+                            class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                            <p class="p-5">If you are not happy with our service please provide feedback or suggestions
+                                to our support team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <%- include('includes/vendor.ejs') %>
+            <br>
+            <br>
+            <br>
+        </div>
+        <%- include('includes/footer.ejs') %>
+    </div>
+    <script>
+        const openApp = () => {
+            document.getElementById('renderBox').innerHTML =
+                '<iframe src="<%= appLink %>" style="height: 100vh; width: 100vw;" frameborder="0"></iframe>';
+        }
+    </script>
+    <script defer src="/js/carousel.js"></script>
+</body>
+
+</html>
