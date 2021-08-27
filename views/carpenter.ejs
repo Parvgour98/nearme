@@ -2,23 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
+    <%- include('./includes/meta.ejs') %>
     <meta name="description" content="<%= desc %>">
     <meta name="keywords"
         content="<%= keyword %>, <%= keyword1 %>, <%= keyword2 %>, <%= keyword3 %>, <%= keyword4 %>, <%= keyword5 %>">
     <meta name="robot" content="index,follow">
     <title><%= title %></title>
-    <link rel="preload" href="/css/theme.css">
-    <link rel="stylesheet" href="/css/tailwind.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/carousel.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <%- include('./includes/link.ejs') %>
 </head>
 
 <body>
@@ -208,11 +198,14 @@
     <script defer src="/js/carousel.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LB7VGYJ2B"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-     
-      gtag('config', 'G-4LB7VGYJ2B');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4LB7VGYJ2B');
     </script>
 </body>
 

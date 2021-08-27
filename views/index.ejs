@@ -2,23 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
+    <%- include('./includes/meta.ejs') %>
     <meta name="description"
         content="Book experienced professionals near you to serve quality home services in Pune - Pest control, Home cleaning, Packers and movers, Repair and maintenance, Plumber, Electrician and much more">
     <meta name="keywords"
         content="service near me, plumber near me, pest control near me, painter near me, electrician near me, home cleaning near me, ac repair near me, carpenter near me">
-    <title>Homeaxis Nearme Services</title>
-    <link rel="preload" href="/css/theme.css">
-    <link rel="stylesheet" href="/css/tailwind.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/carousel.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Homeaxis Nearme Services - Book Professional Services</title>
+    <%- include('./includes/link.ejs') %> 
 </head>
 
 <body>
@@ -37,8 +27,8 @@
                         class="flex justify-center items-center text-center p-16 cursor-pointer"
                         style="border: 1px solid rgba(128, 128, 128, 0.335)">
                         <div class="block">
-                            <img src="https://app.nearmeservices.com/assets/assets/home_cleaning.webp" alt="Home Cleaning"
-                                class="h-20 w-20 m-auto">
+                            <img src="https://app.nearmeservices.com/assets/assets/home_cleaning.webp"
+                                alt="Home Cleaning" class="h-20 w-20 m-auto">
                             <br>
                             Home Cleaning
                         </div>
@@ -235,11 +225,14 @@
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LB7VGYJ2B"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-     
-      gtag('config', 'G-4LB7VGYJ2B');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4LB7VGYJ2B');
     </script>
 </body>
 
