@@ -1,4 +1,4 @@
-@import "./theme.css";
+@import "./theme.min.css";
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -30,7 +30,7 @@ nav ul#menu li {
 }
 
 .rounded-outline-btn {
-  @apply p-2 px-5 uppercase font-light border border-onNavBar focus:outline-none transition duration-100 hover:border-primary text-sm rounded-full;
+  @apply p-2 px-5 uppercase font-light border border-onNavBar focus:outline-none hover:border-primary text-sm rounded-full;
 }
 
 main {
