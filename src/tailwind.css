@@ -18,7 +18,7 @@ nav {
 }
 
 nav .container {
-  @apply w-full px-6 lg:p-0 lg:w-11/12 xl:w-10/12 h-full flex justify-between md:justify-around items-center;
+  @apply w-full h-full flex justify-between md:justify-around items-center;
 }
 
 nav #menu {

@@ -12549,26 +12549,11 @@ nav .container {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 @media (min-width: 768px){
   nav .container{
     justify-content: space-around;
-  }
-}
-
-@media (min-width: 1024px){
-  nav .container{
-    width: 91.666667%;
-    padding: 0px;
-  }
-}
-
-@media (min-width: 1280px){
-  nav .container{
-    width: 83.333333%;
   }
 }
 
