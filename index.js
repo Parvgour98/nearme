@@ -3,7 +3,7 @@ const path = require('path')
 require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
-const helmet = require('helmet')
+// const helmet = require('helmet')
 
 const rootDir = require('./helpers/rootDir')
 const router = require('./routes/router')
@@ -12,7 +12,7 @@ const app = express()
 
 app.enable('trust proxy')
 
-app.use(helmet())
+// app.use(helmet())
 
 app.use(morgan('combined'))
 
