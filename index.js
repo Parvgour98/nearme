@@ -32,6 +32,6 @@ app.use(express.static(path.join(rootDir, 'public')))
 
 app.use(router)
 
-app.use((req, res, next) => res.sendStatus(404))
+app.use((req, res, next) => res.redirect('/'))
 
 app.listen(process.env.PORT)
