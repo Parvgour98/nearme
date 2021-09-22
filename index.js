@@ -22,7 +22,8 @@ app.set('view engine', 'ejs')
 app.use(function (request, response, next) {
 
     if (process.env.NODE_ENV != 'development' && !request.secure) {
-        return response.redirect("https://" + request.headers.host + request.url);
+        return response.redirect("http://scm-v1.ap-south-1.elasticbeanstalk.com/");
+        // return response.redirect("http://" + request.headers.host + request.url);
     }
 
     next();
